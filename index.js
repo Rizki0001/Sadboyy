@@ -75,9 +75,9 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Iqbal🖤\n' // full name
+            + 'FN:Ahmad\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6281315995628:+62 813-1599-5628\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=60195042951:+60 19-504 2951\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
@@ -266,7 +266,8 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["6281315995628@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["60195042951@s.whatsapp.net"] // replace this with your number
+                        const ownerNumber = ["6281315995628@s.whatsapp.net"]
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
